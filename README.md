@@ -1,7 +1,11 @@
 # Fork Information
-Main changes are just cleanups and making the RPC look better.
+Main changes are (as of writing):
 
-All credits still goes to the original developer for making thos possible (btw Apple, fix iTunes so it isn't so unstable and maybe people will use it)
+- Darker UI (some colors haven't been replaced though)
+- Cleaned up some code
+- Switched from a red/pink-ish color on the text on the side, to a green-blue color
+
+All credits still goes to the original developer for making this possible (btw Apple, fix iTunes so it isn't so unstable and maybe people will use it)
 
 # Apple Music (WebView2)
 
