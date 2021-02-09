@@ -15,14 +15,28 @@ namespace Apple_Music
         public Form1()
         {
             InitializeComponent();
-            // Handle window resizing
             Resize += Form_Resize;
             HandleResize();
-
-            // Disconnect from Discord RPC when window is closed
             FormClosing += Form_Closing;
+            Paint += OnPaint;
+            webView.Paint += OnPaint;
+            webView.SourceChanged += WebViewOnSourceChanged;
             InitializeWebView();
         }
+
+        /// <summary>
+        /// Called when the page source has been modified.
+        /// </summary>
+        private void WebViewOnSourceChanged(object sender, CoreWebView2SourceChangedEventArgs e)
+        {
+            webView.ExecuteScriptAsync(Commons.main_view_darker);
+            webView.ExecuteScriptAsync(Commons.nav_container_darker);
+            webView.ExecuteScriptAsync(Commons.nav_top_chrome_darker);
+            webView.ExecuteScriptAsync(Commons.nav_playback_darker);
+            webView.ExecuteScriptAsync(Commons.global_primary_color);
+        }
+
+        private void OnPaint(object sender, PaintEventArgs e) => e.Graphics.Clear(Color.Transparent);
 
         // Window resizing
         private void Form_Resize(object sender, EventArgs e) => HandleResize();
