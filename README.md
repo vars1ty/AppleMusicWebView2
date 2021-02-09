@@ -1,3 +1,8 @@
+# Fork Information
+Main changes are just cleanups and making the RPC look better.
+
+All credits still goes to the original developer for making thos possible (btw Apple, fix iTunes so it isn't so unstable and maybe people will use it)
+
 # Apple Music (WebView2)
 
 This is the Apple Music webapp, in a WebView2 (Microsoft Edge - Chromium) container. Integrated with Discord Rich Presence.
@@ -15,7 +20,7 @@ Requires the WebView2 Runtime ([Download](https://go.microsoft.com/fwlink/p/?Lin
 
 ## Build requirements
 
-- Visual Studio 2019
+- Visual Studio 2019, or Jetbrains Rider
 - [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) or [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/en-us/download)
 
 ## License
