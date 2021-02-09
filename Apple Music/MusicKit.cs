@@ -2,7 +2,7 @@
 
 public class MusicKitResponse
 {
-    public int? State { get; set; }
+    public short? State { get; set; }
     public string AlbumName { get; set; }
     public string ArtistName { get; set; }
     public int DurationInMillis { get; set; }
